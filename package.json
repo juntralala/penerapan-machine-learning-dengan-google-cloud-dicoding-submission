@@ -1,0 +1,22 @@
+{
+  "name": "pml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server/main.js",
+    "start:dev": "nodemon ./src/server/main.js"
+  },
+  "author": "juntralala",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
+    "@hapi/hapi": "^21.3.12",
+    "@tensorflow/tfjs-node": "^4.14.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
