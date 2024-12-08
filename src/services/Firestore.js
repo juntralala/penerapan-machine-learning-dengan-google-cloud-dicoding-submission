@@ -11,12 +11,12 @@ export class Firestore {
     }
 
     static async store(id, data) {
-        const collection = (await Firestore.getDB()).collection('prediction');
+        const collection = (await Firestore.getDB()).collection('predictions');
         return await collection.doc(id).set(data);
     }
 
     static async getHistories() {
-        const collection = (await Firestore.getDB()).collection('prediction');
+        const collection = (await Firestore.getDB()).collection('predictions');
         const predictions = (await collection.get());
         let histories = [];
         predictions.forEach(function (doc) {
