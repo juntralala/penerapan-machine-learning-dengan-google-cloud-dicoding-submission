@@ -9,7 +9,7 @@ dotenv.config();
 
 const server = Hapi.server({
     host: "0.0.0.0",
-    port: 8080,
+    port: process.env.PORT || 80,
     routes: {
         cors: {
             origin: ["*"]
