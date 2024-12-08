@@ -8,6 +8,6 @@ RUN npm install --no-dev
 
 COPY . .
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD ["sudo", "npm", "start"]
+CMD ["npm", "start"]
